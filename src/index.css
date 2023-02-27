@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 93%, 59%);
+  --yellow: hsl(55, 93%, 59%);
+  --green: hsl(122, 93%, 59%);
+  --blue: hsl(224, 93%, 59%);
+
+  --primary: #020f6c;
+  --secondary: cyan;
+  --panel-bg: rgba(0, 0, 0, 0.3);
+
+  --cardWidth: 150px;
+  --cardWidthBigger: 200px;
+
+  --fontBig: 7rem;
+  --fontSmall: 3rem;
+  --fontSouls: 2rem;
+  --fontPower: 1.3rem;
+}
+
+@media screen and (max-width: 1600px) {
+  :root {
+    --cardWidth: 100px;
+    --cardWidthBigger: 130px;
+
+    --fontBig: 5rem;
+    --fontSmall: 2rem;
+    --fontSouls: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --cardWidth: 70px;
+    --cardWidthBigger: 100px;
+
+    --fontBig: 4rem;
+    --fontSmall: 1.4rem;
+    --fontSouls: 1rem;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap");
+
+
+@font-face {
+  font-family: 'BIG_NOODLE_TITLING';
+  src: url('assets/fonts/BIG_NOODLE_TITLING.TTF') format('TTF');
+}
+
+@font-face {
+  font-family: 'BIG_NOODLE_TITLING_OBLIQUE';
+  src: url('assets/fonts/BIG_NOODLE_TITLING_OBLIQUE.TTF') format('TTF');
+}
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  /* font-family: "Cabin", sans-serif !important; */
+  font-family: "Roboto Mono", monospace !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.card-container {
+  perspective: 800px;
+  width: var(--cardWidth);
+}
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #161d3f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #161d3f;
+}
+
+
+.flame{
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform:rotate(-45deg) scale(1.5,1.5);
+}
+
+.yellow{
+  
+  width: 12px;
+  height: 10px;
+  background:cyan;
+  box-shadow: 0px 0px 9px 4px cyan;
+}
+
+.yellow-enemy{
+  
+  width: 5px;
+  height: 3px;
+  background:cyan;
+  box-shadow: 0px 0px 9px 4px cyan;
+}
+
+@keyframes flicker{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg);}
+  60%  {transform: rotate(1deg) scaleY(1.04);}
+  80%  {transform: rotate(-2deg) scaleY(0.92);}
+  100% {transform: rotate(1deg);}
+}

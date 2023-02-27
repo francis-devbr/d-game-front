@@ -1,0 +1,92 @@
+.bg-wallet{
+     /* background-image: url("https://storage.googleapis.com/dracards-game-frontend-public-assets/background-wallet.png"); */
+  background-image: url("https://storage.googleapis.com/dracards-game-frontend-public-assets/Bg_site.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  max-height: 200vh;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.btn-dracards{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF !important;
+  padding: 12px 35px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  background: rgb(255,91,76);
+  background: linear-gradient(90deg, rgba(255,91,76,1) 0%, rgba(255,91,76,1) 0%, rgba(255,2,78,1) 100%);
+}
+
+.btn-dracards-vs-b{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF !important;
+  padding: 12px 35px;
+  border: 0px solid #0000;
+  border-radius: 10px 0 0 10px;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  background: rgb(255,91,76);
+  background: linear-gradient(90deg, rgba(255,91,76,1) 0%, rgba(255,91,76,1) 0%, rgba(255,2,78,1) 100%);
+}
+
+.btn-dracards-vs-p{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF !important;
+  padding: 12px 35px;
+  border: 0px solid #0000;
+  border-radius: 0 10px 10px 0;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  background: rgb(255,91,76);
+  background: linear-gradient(90deg, rgba(255,91,76,1) 0%, rgba(255,91,76,1) 0%, rgba(255,2,78,1) 100%);
+  opacity: 0.5;
+}
+
+.btn-dracards-vs-p:hover{
+  opacity: 1;
+}
+
+.box-dracards{
+  background-color: #0008;
+  color: #FFF;
+  padding: 20px 50px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.title-box-dracards{
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  font-family: BIG_NOODLE_TITLING;
+}
+
+.btn-game-mode{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF !important;
+  padding: 12px 35px;
+  border: 0px solid #0000;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  display: inline-block;
+  background: rgb(255,91,76);
+  background: linear-gradient(90deg, rgba(255,91,76,1) 0%, rgba(255,91,76,1) 0%, rgba(255,2,78,1) 100%);
+  width: 100%;
+}
+.box-mode{
+  margin-top: 10px;
+  text-align: left;
+}
